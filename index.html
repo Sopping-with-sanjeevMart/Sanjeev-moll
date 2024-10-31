@@ -1,0 +1,461 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+
+    <!--linking External CSS-->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!--linking Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <!--Internal CSS-->
+ 
+    <style>
+        .home {                                                                                                  /*Adding background image to home section*/
+          width: 100%;
+    height: 700px;
+     background-size: cover;
+ 
+   background-position: center;
+   animation: slide 15s infinite;
+    }
+   @keyframes slide {
+       0% {
+           background-image: url( ../Images/BackgroundHome/Image.jpeg);
+       }
+       30% {
+           background-image: url( https://m.media-amazon.com/images/I/61BKVkj5+uL._SX3000_.jpg);
+       }
+       60% {
+           background-image: url(https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Jupiter24/FestiveDealsExtended/Header2._CB542284453_.jpg);
+       }
+    
+       100% {
+           background-image: url( https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/happy-diwali_desktop_2x._CB542284954_.jpg);
+       }
+   }
+        
+
+        .home h1 {                                                                                                /*Adding styles to h1 element inside home id*/
+            color: white;
+            font-size: 120px;
+            text-align: center;
+            padding-top: 300px;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        .home p {                                                                                                 /*Adding styles to p element inside home id*/
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            font-size: 30px;
+        }
+
+        #header {
+            z-index: 2;
+        }
+
+        .card {
+            z-index: 1;
+        }
+
+        @media  screen and (max-width: 575px) {                                                                    /*Styling the h1 element inside home id in different screen sizes*/
+            #home h1 {
+                font-size: 70px;
+                text-align: center;
+            }
+        }
+
+        @media  screen and (max-width: 336px) {                                                                  /*Styling the h1 element inside home id in different screen sizes*/
+            #home h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+        
+        #products .card {
+            margin: auto;
+        }
+        
+       .btn {                                                                                                 /*adding color to button*/
+        background-color: #008080 ;
+       }
+       
+      
+    
+
+    </style>
+</head>
+
+<body>
+      
+      <!--Injecting header dynamically using JS-->
+      <div  class="container-fluid" id="header"
+      style=".suggestions {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-height: 150px;
+        overflow-y: auto;
+        position: absolute;
+        background-color: white;
+        width: 70%;
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+    
+    .suggestion-item {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .suggestion-item:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .suggestions::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    .suggestions::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+    }
+    
+    .suggestions::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+    
+    .suggestions::-webkit-scrollbar-thumb:hover {
+        background-color: #999;
+    }
+
+    @media screen and (max-width: 576px) {
+        .suggestions {
+            width: 100%;
+        }
+
+        .suggestion-item {
+            padding: 5px;
+        }
+
+      
+        
+    }"
+
+      ></div>                                                           
+      
+
+      <!--Home Page (Main Content)-->
+      <div class="home">                                                                                            
+      <h1>Sanjeev&R</h1>
+      <p>Clothes that talk on behalf of you. Something for every occassion.</p>
+      </div>
+
+      <!--Carousels-->
+      <div id="products">
+        <h1 style="text-align: center; padding-top: 50px;">Featured Products</h1> <br> <br>                                   
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">                         
+          <div class="carousel-inner">
+
+              <!--Slider 1-->
+              <div class="carousel-item active">
+                <div class="row">   
+                  
+                    <!--Using Bootstrap for Large screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none "> 
+                        <div class="card text-center" style="width: 18rem;">                                                                 <!--Card 1-->
+                            <img src="../Images//Men Clothes/Hoodie.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Black & White Hoodie</h5>
+                              <h5>15$</h5>
+                              <p class="card-text">Black and white Hoodie for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">                                                                                                    <!--Card 2-->
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="../Images//Men Clothes/Shirt.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Red Shirt</h5>
+                              <h5>18$</h5>
+                              <p class="card-text">Red full sleeve shirt for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">                                                                                                      <!--Card 3-->
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="../Images//Men Clothes/Tshirt.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Green T-shirt</h5>
+                              <h5>12$</h5>
+                              <p class="card-text">Green T-shirt for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">                                                                                                        <!--Card 4-->
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="../Images//Men Clothes/Sweatshirt.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Blue Sweatshirt</h5>
+                              <h5>18$</h5>
+                              <p class="card-text">Blue Sweatshirt for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Using Bootstrap for Medium screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-block d-none "> 
+                        <div class="card text-center" style="width: 18rem;">                                                                 <!--Card 1-->
+                            <img src="../Images//Men Clothes/Hoodie.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Black & White Hoodie</h5>
+                              <h5>15$</h5>
+                              <p class="card-text">Black and white Hoodie for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-block d-none ">                                                                                                    <!--Card 2-->
+                        <div class="card text-center" style="width: 18rem;">
+                            <img src="../Images//Men Clothes/Shirt.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Red Shirt</h5>
+                              <h5>18$</h5>
+                              <p class="card-text">Red full sleeve shirt for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Using Bootstrap for Small screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-none d-block "> 
+                        <div class="card text-center" style="width: 18rem;">                                                                 <!--Card 1-->
+                            <img src="../Images//Men Clothes/Hoodie.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Black & White Hoodie</h5>
+                              <h5>15$</h5>
+                              <p class="card-text">Black and white Hoodie for men</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!--Slider 2-->
+              <div class="carousel-item">                                                                                            
+                <div class="row">
+
+                  <!--Using Bootstrap for Large screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                    <!--Card 1-->
+                            <img src="../Images/Women Clothes/Yellowdress.jpeg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Yellow Dress</h5>
+                              <h5>20$</h5>
+                              <p class="card-text">Yellow Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">                                  
+                        <div class="card text-center" style="width: 18rem;">                                                                  <!--Card 2-->
+                            <img src="../Images/Women Clothes/Pinkdress.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Pink Dress<h5>
+                                <h5>25$</h5>
+                              <p class="card-text">Pink Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                     <!--Card 3-->
+                            <img src="../Images/Women Clothes/Lavendar dress.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Lavendar Dress</h5>
+                              <h5>20$</h5>
+                              <p class="card-text">Lavendar Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                         <!--Card 4-->
+                            <img src="../Images/Women Clothes/Bluedress.jpeg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Blue Dress</h5>
+                              <h5>22$</h5>
+                              <p class="card-text">Blue Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Using Bootstrap for Medium screens-->
+
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-block d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                    <!--Card 1-->
+                            <img src="../Images/Women Clothes/Yellowdress.jpeg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Yellow Dress</h5>
+                              <h5>20$</h5>
+                              <p class="card-text">Yellow Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-block d-none ">                                  
+                        <div class="card text-center" style="width: 18rem;">                                                                  <!--Card 2-->
+                            <img src="../Images/Women Clothes/Pinkdress.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Pink Dress<h5>
+                                <h5>25$</h5>
+                              <p class="card-text">Pink Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Using Bootstrap for Small screens-->
+
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-none d-block ">
+                        <div class="card text-center" style="width: 18rem;">                                                                    <!--Card 1-->
+                            <img src="../Images/Women Clothes/Yellowdress.jpeg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Yellow Dress</h5>
+                              <h5>20$</h5>
+                              <p class="card-text">Yellow Dress for women</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!--Slider 3-->
+              <div class="carousel-item">                                                                                             
+                <div class="row">
+
+                  <!--Using Bootstrap for Large screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                 <!--Card 1-->
+                            <img src="../Images/Kids Clothes/Blueboy.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Blue shirt</h5>
+                              <h5>10$</h5>
+                              <p class="card-text">Blue shirt for boys</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                  <!--Card 2-->
+                            <img src="../Images/Kids Clothes/pinkgirl.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Pink Dress</h5>
+                              <h5>11$</h5>
+                              <p class="card-text">Pink Dress for girls</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                   <!--Card 3-->
+                            <img src="../Images/Kids Clothes/yellowboy.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Yellow shirt</h5>
+                              <h5>10$</h5>
+                              <p class="card-text">Yellow shirt for boys</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-block d-md-none d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                   <!--Card 4-->
+                            <img src="../Images/Kids Clothes/Whitegirl.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">White Dress</h5>
+                              <h5>12$</h5>
+                              <p class="card-text">White Dress for girls</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Using Bootstrap for Medium screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-block d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                 <!--Card 1-->
+                            <img src="../Images/Kids Clothes/Blueboy.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Blue shirt</h5>
+                              <h5>10$</h5>
+                              <p class="card-text">Blue shirt for boys</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-block d-none ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                  <!--Card 2-->
+                            <img src="../Images/Kids Clothes/pinkgirl.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Pink Dress</h5>
+                              <h5>11$</h5>
+                              <p class="card-text">Pink Dress for girls</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Using Bootstrap for Small screens-->
+                    <div class="col-lg-3 col-md-6 col-12 d-lg-none d-md-none d-block ">
+                        <div class="card text-center" style="width: 18rem;">                                                                                 <!--Card 1-->
+                            <img src="../Images/Kids Clothes/Blueboy.jpg" class="card-img-top">
+                            <div class="card-body">
+                              <h5 class="card-title">Blue shirt</h5>
+                              <h5>10$</h5>
+                              <p class="card-text">Blue shirt for boys</p>
+                              <a href="Cart.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+          </div>
+          <div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Injecting footer dynamically using JS-->
+      <div id="footer" style="background-color: rgba(49, 48, 48, 0.774); color: white;"></div>
+   
+      <!--linking header JS--> 
+      <script src="../JS/header.js"></script>
+
+      <!--linking footer JS-->
+      <script src="../JS/footer.js"></script>
+
+      <!--linking bootstrap JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
